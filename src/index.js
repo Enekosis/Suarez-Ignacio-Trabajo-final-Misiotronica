@@ -5,6 +5,7 @@ import Home from './Routes/Home';
 import Shop from './Routes/Shop';
 import Contact from './Routes/Contact';
 import About from './Routes/About';
+import NotFound from './Routes/NotFound';
 import "./App.css"
 import NavBar from './Components/Navbar';
 import Footer from './Components/Footer';
@@ -25,7 +26,8 @@ const router = createBrowserRouter([
       { path: "/", element: (<Home />) },
       { path: "tienda", element: (<Shop />) },
       { path: "contacto", element: (<Contact />) },
-      { path: "nosotros", element: (<About />) }
+      { path: "nosotros", element: (<About />) },
+      { path: "*", element: (<NotFound />) }
     ]
   }
 ])

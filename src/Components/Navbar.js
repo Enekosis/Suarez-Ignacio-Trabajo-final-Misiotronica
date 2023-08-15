@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from 'react-icons/ai';
+import 'boxicons'
 import {SidebarData} from './SidebarData';
 import "../App.css";
 import { IconContext } from 'react-icons/lib';
@@ -19,7 +20,16 @@ function Navbar() {
                 <Link to="#" className='menu-bars'>
                         <FaIcons.FaBars onClick={showSidebar} />
                 </Link>
+
                 <Link to='/' className='nav-logo-container' ><img src={logo} alt="logo de Misiotronica" className='nav-logo' /></Link>
+
+                <div class="search-box">
+                        <button className="btn-search"><FaIcons.FaSearch /></button>
+                    <input type="text" className="input-search" placeholder="Buscar producto..."></input>
+                </div>
+
+                <button className='shopCart'><box-icon name='cart' size="md"></box-icon></button>
+                
 
 
 

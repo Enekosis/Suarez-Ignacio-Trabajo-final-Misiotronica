@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import img1 from '../Components/hero-image.jpg'
+import brandLogos from '../Components/brandsLogos.png'
 import 'boxicons'
 
 function Home() {
@@ -15,6 +16,10 @@ function Home() {
         <div className="h-image">
           <img className='img1' src={img1} alt="Una plaqueta con circuitos electronicos (imagen generada por ia)" />
         </div>
+      </div>
+      <div className="hBrands">
+        <h2 className="bTitle">Nos avalan las siguientes marcas</h2>
+        <img src={brandLogos} alt="Logos de las marcas que nos avalan" className="bLogos" />
       </div>
     </div>
   )
